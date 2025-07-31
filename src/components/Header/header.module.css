@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
