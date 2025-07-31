@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Trash2, ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import styles from "./blog.module.css";
 
 interface IBlogProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -82,10 +82,14 @@ const Blog = ({ blogCount }: IBlogProps) => {
                 }}
               >
                 <CardDescription>
-                  초반에 고블린 카드 2장을 모아 승급하여 클랜카드를 모아가자
+                  초반에 고블린 카드 2장을 모으기
                 </CardDescription>
-                <Button variant="outline" className="w-full">
-                  <Trash2 /> 삭제
+
+                <Button asChild variant="outline" className="w-full">
+                  <a href="https://clashroyale.arong.day/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    클래시로얄 합체 전술 바로가기
+                  </a>
                 </Button>
               </CardContent>
             </Card>
