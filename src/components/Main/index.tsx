@@ -4,7 +4,7 @@ import styles from "./main.module.css";
 const Main = () => {
   return (
     <main className={styles.main}>
-      <Blog title="2일차" />
+      <Blog blogLength={6} />
     </main>
   );
 };
