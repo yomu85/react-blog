@@ -6,3 +6,13 @@
   gap: 24px;
   padding: 24px;
 }
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.main-input {
+  width: 100px;
+  text-align: right;
+}

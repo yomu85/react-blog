@@ -1,16 +1,22 @@
 .blog {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
+  width: 100%;
 }
 .blog-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 342px;
 }
 
 .blog-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
+  min-width: 342px;
+  width: 100%;
 }
